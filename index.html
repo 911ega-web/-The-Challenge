@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Francisco Perez — Portfolio</title>
+  <meta name="description" content="Portfolio of Francisco Perez — beginner-friendly projects, skills, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="#" class="logo" aria-label="Homepage">FP</a>
+    <nav class="nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="accent">Francisco Perez</span></h1>
+          <p class="sub">I’m learning to build <span id="typewriter" aria-live="polite"></span></p>
+          <p class="tagline">Partner manager turned developer-in-progress — curious, steady, and excited to grow every day.</p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">See Projects</a>
+            <a class="btn" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- Profile card with Marine photo -->
+        <div class="hero-card" role="img" aria-label="Profile photo and quick facts">
+          <div class="avatar">
+            <img src="marine.jpg" alt="Francisco Perez in USMC service photo">
+            <span class="badge">USMC Veteran</span>
+          </div>
+          <ul class="quick-facts">
+            <li>Location: Surprise, AZ</li>
+            <li>Focus: Frontend &amp; Python</li>
+            <li>Fun: Pizza enthusiast 🍕</li>
+            <li>Learning: React &amp; APIs</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down" aria-label="Scroll to About">▼</a>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-header">
+        <h2>About</h2>
+        <p>My path into tech.</p>
+      </div>
+      <div class="grid two">
+        <article class="card">
+          <h3>My Story</h3>
+          <p>I’m a former partner manager switching lanes into software development. I’m starting simple, learning fast, and building one small win at a time.</p>
+          <p>I served in the United States Marine Corps. On 9/11 I was a first responder and later a rescue volunteer — experiences that shaped my grit, teamwork, and drive to help people. Those values guide how I learn and code today.</p>
+          <p>Outside of the laptop, I love to travel, meet new people, and try local food. Seeing the world keeps me curious — which makes me a better beginner and a better teammate.</p>
+        </article>
+        <figure class="card photo-card">
+          <img src="marine.jpg" alt="Francisco Perez in USMC service photo">
+          <figcaption>Proudly served — lessons I carry into tech.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="mission" class="section alt">
+      <div class="section-header">
+        <h2>Mission</h2>
+        <p>Keep it fun. Keep it useful.</p>
+      </div>
+      <div class="grid two">
+        <article class="card">
+          <h3>Start Simple, Ship Often</h3>
+          <p>Build tiny projects that work, learn from them, and make the next one a little better. Fewer buzzwords, more finished stuff.</p>
+        </article>
+        <article class="card">
+          <h3>Help While I Learn</h3>
+          <p>Share notes, snippets, and lightweight guides for other beginners and veterans switching into tech. If it helped me, I’ll pass it on.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="aspirations" class="section">
+      <div class="section-header">
+        <h2>Aspirations</h2>
+        <p>New to the industry — here’s where I’m headed.</p>
+      </div>
+      <div class="grid three">
+        <article class="card hover">
+          <h3>Frontend Foundations</h3>
+          <p>Get solid with HTML, CSS, and vanilla JavaScript. Build clean pages, friendly forms, and components that feel good to use.</p>
+        </article>
+        <article class="card hover">
+          <h3>Python Skills</h3>
+          <p>Use Python to work with files, simple scripts, and small automations that save time in real life.</p>
+        </article>
+        <article class="card hover">
+          <h3>Team Player Energy</h3>
+          <p>Contribute to beginner-friendly repos, write clear readmes, and be the reliable person others can count on.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <p>Small steps, real progress.</p>
+      </div>
+      <div class="grid three">
+        <article class="project card hover">
+          <div class="project-badge">HTML/CSS/JS</div>
+          <h3>Responsive Portfolio</h3>
+          <p>A simple personal site with dark mode and keyboard-friendly navigation. Built from scratch as a learning project.</p>
+          <a class="link" href="#" onclick="alert('Demo placeholder — swap with your live link!')" aria-label="Open Responsive Portfolio demo">Live Demo</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-header">
+        <h2>Skills</h2>
+        <p>Tools I use and learn.</p>
+      </div>
+      <ul class="chips" role="list">
+        <li class="chip">HTML5</li>
+        <li class="chip">CSS3</li>
+        <li class="chip">JavaScript</li>
+        <li class="chip">Git &amp; GitHub</li>
+        <li class="chip">Python</li>
+        <li class="chip">APIs</li>
+        <li class="chip">React (learning)</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Let’s collaborate or just say hi.</p>
+      </div>
+      <form class="card form" id="contact-form">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Send</button>
+        <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Francisco Perez. Built with ❤️ while learning.</p>
+    <button class="to-top" aria-label="Back to top">↑</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
